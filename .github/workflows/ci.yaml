@@ -6,9 +6,11 @@ jobs:
     steps:
         - name: Checkout
           uses: actions/checkout@v2
+          with:
+            node-modules: true
         - uses: actions/setup-node@v1
           with:
-            node-version: 18
+            node-version: 16
         - name: Install WebdriverIO
           run: npm install
         - name: Run Tests

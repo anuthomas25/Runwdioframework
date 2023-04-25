@@ -10,6 +10,6 @@ jobs:
           with:
             node-version: 18
         - name: Install WebdriverIO
-          run: npm install -g webdriverio
+          run: npm install
         - name: Run Tests
-          run: wdio wdio.conf.js
+          run: npm run wdio

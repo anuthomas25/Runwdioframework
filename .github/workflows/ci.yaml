@@ -9,7 +9,7 @@ jobs:
         - uses: actions/setup-node@v1
           with:
             node-version: 18
-        - name: Install
-          run: npm install
-        - name: Test
-          run: npm run wdio
+        - name: Install WebdriverIO
+          run: npm install -g webdriverio
+        - name: Run Tests
+          run: wdio wdio.conf.js
